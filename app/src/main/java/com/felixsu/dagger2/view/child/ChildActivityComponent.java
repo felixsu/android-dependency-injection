@@ -14,7 +14,7 @@ import dagger.Component;
 
 @PerActivity
 @Component(dependencies = AppComponent.class, modules = ActivityModule.class)
-public interface ChildActivityComponent {
+interface ChildActivityComponent {
 
     void inject(ChildActivity activity);
 }

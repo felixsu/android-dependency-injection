@@ -2,12 +2,10 @@ package com.felixsu.dagger2.view.main;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.EditText;
 
 import com.felixsu.dagger2.R;
 import com.felixsu.dagger2.base.activity.BaseActivity;
-import com.felixsu.dagger2.model.SharedData;
 import com.felixsu.dagger2.view.child.ChildActivity;
 
 import butterknife.BindView;

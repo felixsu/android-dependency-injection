@@ -1,7 +1,5 @@
 package com.felixsu.dagger2.view.main;
 
-import android.util.Log;
-
 import com.felixsu.dagger2.model.SharedData;
 
 import javax.inject.Inject;
