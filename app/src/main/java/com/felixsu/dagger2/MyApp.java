@@ -6,6 +6,9 @@ import com.felixsu.dagger2.base.dagger.component.AppComponent;
 import com.felixsu.dagger2.base.dagger.component.DaggerAppComponent;
 import com.felixsu.dagger2.base.dagger.module.AppModule;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Created on 12/29/16.
  *
@@ -23,6 +26,9 @@ public class MyApp extends Application {
         mComponent = DaggerAppComponent.builder()
                 .appModule(new AppModule(this))
                 .build();
+
+        String currentDate = new SimpleDateFormat("yyyy.MM.dd 'at' hh:mm:ss").format(new Date());
+        mComponent.sharedPreferences().edit().putString("current_date", currentDate).apply();
     }
 
     public AppComponent getComponent() {

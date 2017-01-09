@@ -11,10 +11,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.felixsu.dagger2.view.main.MainActivity">
 
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="text 1"/>
+
     <EditText
         android:id="@+id/field_1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_1"
+        tools:text="field 1"/>
 
     <Button
         android:id="@+id/button_1"
